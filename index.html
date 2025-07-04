@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamza Jamil | Modern Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Floating CV Button -->
+    <a href="./image/Hamza Jamil Resume.pdf" download class="cv-btn pulse">
+        <i class="fas fa-download"></i> Download CV
+    </a>
+
+    <!-- Header Section -->
+    <header id="home" class="gradient-bg">
+        <nav class="navbar">
+            <div class="logo">HJ PORTFOLIO</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+
+        <div class="header-content">
+            <div class="header-text">
+                <h1 class="animate-text">Hamza <span>Jamil</span></h1>
+                <div class="typewriter">
+                    <h2>Web Developer | UI/UX Designer</h2>
+                </div>
+                <p>Hi! I'm Hamza Jamil, a passionate and creative Frontend Developer based in Karachi, Pakistan. I specialize in building beautiful, interactive, and fully responsive websites using HTML, CSS, and JavaScript.
+
+I have a strong eye for design and detail, and I love turning ideas into clean, smooth, and user-friendly web experiences. With hands-on experience in frontend development, I focus on performance, mobile responsiveness, and creating seamless user interfaces that leave a lasting impression.
+
+I constantly explore new tools and technologies, and I'm always eager to take on exciting challenges in the digital world.</p>
+            
+</div>
+            <div class="header-image">
+                <div class="image-container">
+                    <img src="./image/348559310_3666986193574372_1809704999954352770_n.jpg" alt="Hamza Jamil" class="profile-img">
+                    <div class="circle-animation"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-down">
+            <a href="#about"><i class="fas fa-chevron-down bounce"></i></a>
+        </div>
+    </header>
+
+    <!-- Profile Section -->
+    <section id="profile" class="profile">
+        <div class="section-header">
+            <h2>Personal <span>Info</span></h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="profile-container">
+            <div class="profile-image">
+                <img src="./image/96362140_874816039651986_280157598571823104_n.jpg" alt="Hamza Jamil" class="profile-img">
+                <div class="social-icons">
+                        <a href="https://github.com/Humzajamil234"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/hamza-jamil-43b934225/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100074635171816"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="profile-info">
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>hamzashahidjamil@gmail.com</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>03172342070</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-birthday-cake"></i>
+                    <h3>Date of Birth</h3>
+                    <p>12 March 1999</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-flag"></i>
+                    <h3>Nationality</h3>
+                    <p>Pakistani</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills gradient-bg-2">
+        <div class="section-header">
+            <h2>My <span>Skills</span></h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="skills-container">
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress html" data-width="95%"></div>
+                    </div>
+                    <span class="skill-percent">95%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress css" data-width="90%"></div>
+                    </div>
+                    <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress js" data-width="85%"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React.js</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress react" data-width="80%"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+            </div>
+    </section>
+    
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="section-header">
+            <h2>About <span>Me</span></h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="about-container">
+            <div class="about-image">
+                <div class="image-wrapper">
+                    <img src="./image/348559310_3666986193574372_1809704999954352770_n.jpg" alt="Hamza Jamil">
+                </div>
+            </div>
+            <div class="about-content">
+                <p>Hello! I'm <strong>Hamza Jamil</strong>, a passionate web developer with a love for creating innovative and user-friendly web applications. My journey in web development began with a fascination for coding and design.</p>
+                
+                <p>My expertise lies in <strong>front-end technologies</strong> like <strong>HTML, CSS, JavaScript,</strong> and <strong>React.js</strong>. I am also proficient in working with back-end technologies such as <strong>Node.js</strong> and <strong>MongoDB</strong>.</p>
+    
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>8+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>100%</h3>
+                        <p>Client Satisfaction</p>
+                    </div>
+                </div>
+                
+                <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enhancing my skills through online courses. I believe in continuous learning and staying updated with the latest trends in web development.</p>
+            </div>
+        </div>
+    </section>
+
+   <!-- Projects Section -->
+<section id="projects" class="projects">
+    <div class="section-header">
+        <h2>My <span>Projects</span></h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Here are some of my best work showcasing different skills and technologies</p>
+    </div>
+
+    <div class="projects-container">
+        <!-- Project 1 - Film Lane -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="./image/images.jpeg" 
+                     alt="Film Lane Movie Website" 
+                     class="project-screenshot"
+                     loading="lazy">
+                <div class="project-overlay">
+                    <a href="https://film-lane-movie-website.vercel.app/" target="_blank" class="project-link">
+                        <i class="fas fa-external-link-alt"></i> Visit Live
+                    </a>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>Film Lane</h3>
+                <p class="project-description">
+                    A modern movie discovery platform featuring trending films, search functionality, 
+                    and movie details. Built with React and TMDB API integration.
+                </p>
+                <div class="project-tech">
+                    <span>React</span>
+                    <span>API Integration</span>
+                    <span>Responsive Design</span>
+                </div>
+                <div class="project-buttons">
+                    <a href="https://film-lane-movie-website.vercel.app/" target="_blank" class="btn btn-small">
+                        Live Demo
+                    </a>
+                    <a href="https://github.com/yourusername/film-lane" target="_blank" class="btn btn-small secondary-btn">
+                        <i class="fab fa-github"></i> Code
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 - E-commerce -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="./image/36682.png" 
+                     alt="E-commerce Website" 
+                     class="project-screenshot"
+                     loading="lazy">
+                <div class="project-overlay">
+                    <a href="https://e-commerce-website-two-tan.vercel.app/" target="_blank" class="project-link">
+                        <i class="fas fa-external-link-alt"></i> Visit Live
+                    </a>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>Modern E-commerce</h3>
+                <p class="project-description">
+                    Full-featured online store with product listings, cart functionality, 
+                    and checkout process. Implemented with modern UI/UX principles.
+                </p>
+                <div class="project-tech">
+                    <span>React</span>
+                    <span>Redux</span>
+                    <span>Payment Integration</span>
+                </div>
+                <div class="project-buttons">
+                    <a href="https://e-commerce-website-two-tan.vercel.app/" target="_blank" class="btn btn-small">
+                        Live Demo
+                    </a>
+                    <a href="https://github.com/yourusername/e-commerce" target="_blank" class="btn btn-small secondary-btn">
+                        <i class="fab fa-github"></i> Code
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3 - Todo App -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="./image/images.png" 
+                     alt="Todo Application" 
+                     class="project-screenshot"
+                     loading="lazy">
+                <div class="project-overlay">
+                    <a href="https://todo-application-eight-khaki.vercel.app/" target="_blank" class="project-link">
+                        <i class="fas fa-external-link-alt"></i> Visit Live
+                    </a>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>Productivity Todo</h3>
+                <p class="project-description">
+                    Feature-rich todo application with task management, filtering, 
+                    and local storage persistence. Clean minimalist design.
+                </p>
+                <div class="project-tech">
+                    <span>JavaScript</span>
+                    <span>Local Storage</span>
+                    <span>CRUD Operations</span>
+                </div>
+                <div class="project-buttons">
+                    <a href="https://todo-application-eight-khaki.vercel.app/" target="_blank" class="btn btn-small">
+                        Live Demo
+                    </a>
+                    <a href="https://github.com/yourusername/todo-app" target="_blank" class="btn btn-small secondary-btn">
+                        <i class="fab fa-github"></i> Code
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 4 - Game Hive -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="./image/gamehive-logo.jpg" 
+                     alt="Game Hive" 
+                     class="project-screenshot"
+                     loading="lazy">
+                <div class="project-overlay">
+                    <a href="https://game-hive-brown.vercel.app/" target="_blank" class="project-link">
+                        <i class="fas fa-external-link-alt"></i> Visit Live
+                    </a>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>Game Hive</h3>
+                <p class="project-description">
+                    Gaming platform showcasing popular games with ratings, 
+                    search functionality, and game details. Interactive UI with animations.
+                </p>
+                <div class="project-tech">
+                    <span>React</span>
+                    <span>Game API</span>
+                    <span>UI Animations</span>
+                </div>
+                <div class="project-buttons">
+                    <a href="https://game-hive-brown.vercel.app/" target="_blank" class="btn btn-small">
+                        Live Demo
+                    </a>
+                    <a href="https://github.com/yourusername/game-hive" target="_blank" class="btn btn-small secondary-btn">
+                        <i class="fab fa-github"></i> Code
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 5 - Sweet Slice -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="./image/60e77d1bdceb1223eede21f5e39ac078.jpg" 
+                     alt="Sweet Slice Bakery" 
+                     class="project-screenshot"
+                     loading="lazy">
+                <div class="project-overlay">
+                    <a href="https://sweet-slice-bakery.vercel.app/" target="_blank" class="project-link">
+                        <i class="fas fa-external-link-alt"></i> Visit Live
+                    </a>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>Sweet Slice Bakery</h3>
+                <p class="project-description">
+                    Beautiful bakery website with product showcase, gallery, 
+                    and contact form. Elegant design with smooth transitions.
+                </p>
+                <div class="project-tech">
+                    <span>HTML/CSS</span>
+                    <span>JavaScript</span>
+                    <span>Responsive</span>
+                </div>
+                <div class="project-buttons">
+                    <a href="https://sweet-slice-bakery.vercel.app/" target="_blank" class="btn btn-small">
+                        Live Demo
+                    </a>
+                    <a href="https://github.com/yourusername/bakery-website" target="_blank" class="btn btn-small secondary-btn">
+                        <i class="fab fa-github"></i> Code
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 6 - Nike Shoes -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="./image/nike-shoes-logo-design-template-2f713f42613fdb7daee70cd20af92060_screen.jpg" 
+                     alt="Nike Shoes" 
+                     class="project-screenshot"
+                     loading="lazy">
+                <div class="project-overlay">
+                    <a href="https://nike-shoes-three-khaki.vercel.app/" target="_blank" class="project-link">
+                        <i class="fas fa-external-link-alt"></i> Visit Live
+                    </a>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>Nike Shoes</h3>
+                <p class="project-description">
+                    E-commerce landing page for Nike shoes with product showcase, 
+                    size selection, and add to cart functionality. Modern UI design.
+                </p>
+                <div class="project-tech">
+                    <span>React</span>
+                    <span>Tailwind CSS</span>
+                    <span>Product Filtering</span>
+                </div>
+                <div class="project-buttons">
+                    <a href="https://nike-shoes-three-khaki.vercel.app/" target="_blank" class="btn btn-small">
+                        Live Demo
+                    </a>
+                    <a href="https://github.com/yourusername/nike-store" target="_blank" class="btn btn-small secondary-btn">
+                        <i class="fab fa-github"></i> Code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>Contact <span>Me</span></h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>Karachi, Pakistan</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>hamzashahidjamil@gmail.com</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>03172342070</p>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="cta-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="gradient-bg">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Hamza <span>Jamil</span></h2>
+                    <p>Web Developer | UI/UX Designer</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Me</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/Humzajamil234"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/hamza-jamil-43b934225/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100074635171816"><i class="fab fa-facebook"></i></a>
+                         
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hamza Jamil. All rights reserved.</p>
+                <div class="back-to-top">
+                    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

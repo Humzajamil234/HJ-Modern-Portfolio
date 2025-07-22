@@ -18,14 +18,19 @@ function toggleMenu() {
 }
 
 // Close mobile menu when clicking on a link
-document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-        hamburger.classList.remove('active');
-        navLinks.classList.remove('active');
-    });
-});
+    function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.classList.toggle("open");
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function () {
+          document.querySelectorAll('.nav-link').forEach(el => el.classList.remove('active'));
+          this.classList.add('active');
+          document.getElementById("mobileMenu").classList.remove("open");
+        });
+      });
 
 // Active link on scroll
 const sections = document.querySelectorAll('section');

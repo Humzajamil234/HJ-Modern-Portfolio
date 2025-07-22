@@ -406,6 +406,92 @@ header {
     transition: var(--transition);
 }
 
+
+    .mobile-nav {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 100%;
+      height: 100vh;
+      background-color: #fff;
+      z-index: 9999;
+      transition: right 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .mobile-nav.open {
+      right: 0;
+    }
+
+    .mobile-nav .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 2.5rem;
+      font-weight: bold;
+      background: none;
+      border: none;
+      color: #333;
+      cursor: pointer;
+      z-index: 10000;
+    }
+
+    .mobile-nav .mobile-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    .mobile-nav .mobile-links li {
+      margin: 20px 0;
+    }
+
+    .mobile-nav .mobile-links a {
+      font-size: 1.5rem;
+      color: #333;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .mobile-nav .mobile-links a.active {
+      color: #6c63ff;
+      font-weight: bold;
+      border-bottom: 2px solid #6c63ff;
+      padding-bottom: 4px;
+    }
+
+    .btn-download {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background: linear-gradient(to right, #6c63ff, #4d44db);
+      color: white;
+      border-radius: 30px;
+      font-size: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 15px rgba(108, 99, 255, 0.3);
+      transition: background 0.3s ease;
+    }
+
+    .btn-download:hover {
+      background: linear-gradient(to right, #5a54e8, #6c63ff);
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      .hamburger {
+        display: flex;
+      }
+    }
+
 .header-content {
     display: flex;
     align-items: center;

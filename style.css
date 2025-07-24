@@ -392,18 +392,49 @@ header {
     width: 100%;
 }
 
+/* Hamburger Menu Styles */
 .hamburger {
     display: none;
     cursor: pointer;
     z-index: 100;
+    width: 30px;
+    height: 24px;
+    position: relative;
+    transition: all 0.3s ease;
 }
 
 .bar {
+    position: absolute;
     width: 30px;
     height: 3px;
     background-color: var(--white);
-    margin: 6px 0;
-    transition: var(--transition);
+    transition: all 0.3s ease;
+}
+
+.bar1 {
+    top: 0;
+}
+
+.bar2 {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bar3 {
+    bottom: 0;
+}
+
+/* Active State - Transform to X */
+.hamburger.active .bar1 {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger.active .bar2 {
+    opacity: 0;
+}
+
+.hamburger.active .bar3 {
+    transform: translateY(-10px) rotate(-45deg);
 }
 
 .header-content {
@@ -532,33 +563,33 @@ header {
 }
 
 .social-icons {
-    display: flex;
-    gap: 2rem;
-    margin-top: 3rem;
-    justify-content: center;
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+  justify-content: center;
 }
 
 .social-icons a {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: var(--light-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: var(--transition);
-    font-size: 2rem;
-    color: var(--primary-color);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #667eea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease; /* replaced var for safety */
+  font-size: 1.5rem;          /* slightly smaller for better alignment */
+  color: #fff;                /* white icons for better visibility */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
 }
 
 .social-icons a:hover {
-    background-color: var(--primary-color);
-    color: var(--white);
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(108, 99, 255, 0.3);
+  background-color: #6c63ff;  /* your primary color */
+  color: #fff;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(108, 99, 255, 0.3);
 }
-
 .social-icons1 {
   display: flex;
   gap: 2rem;
@@ -1226,6 +1257,7 @@ footer {
     transition: var(--transition);
     box-shadow: 0 5px 20px rgba(108, 99, 255, 0.4);
 }
+
 .back-to-top.active {
     opacity: 1;
     visibility: visible;

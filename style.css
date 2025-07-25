@@ -406,7 +406,7 @@ header {
     position: absolute;
     width: 30px;
     height: 3px;
-    background-color: var(--white);
+    background-color: var(--black);
     transition: all 0.3s ease;
 }
 

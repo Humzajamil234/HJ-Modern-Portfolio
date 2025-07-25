@@ -13,39 +13,32 @@ window.addEventListener('load', function() {
 function toggleMenu() {
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
+    
+    // Toggle active class on both elements
     hamburger.classList.toggle('active');
     navLinks.classList.toggle('active');
+    
+    // Change aria-label for accessibility
+    const isOpen = navLinks.classList.contains('active');
+    hamburger.setAttribute('aria-expanded', isOpen);
+    hamburger.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    
+    // Toggle body scroll when menu is open
+    document.body.style.overflow = isOpen ? 'hidden' : 'auto';
 }
 
-// Mobile Menu Toggle
-function toggleMenu() {
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    hamburger.classList.toggle('active');
-    navLinks.classList.toggle('active');
-}
-
-// Set active nav item
+// Close menu when clicking on a nav link
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-link');
     
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
-            // Remove active class from all links
-            navLinks.forEach(l => l.classList.remove('active'));
-            
-            // Add active class to clicked link
-            this.classList.add('active');
-            
-            // Close mobile menu if open
-            const hamburger = document.querySelector('.hamburger');
-            const navMenu = document.querySelector('.nav-links');
-            if (hamburger.classList.contains('active')) {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
+            if (window.innerWidth <= 768) {
+                toggleMenu();
             }
         });
     });
+
     
     // Show/hide back to top button
     const backToTop = document.querySelector('.back-to-top');

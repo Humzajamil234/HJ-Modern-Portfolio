@@ -396,7 +396,6 @@ header {
 .hamburger {
     display: none;
     cursor: pointer;
-    z-index: 100;
     width: 30px;
     height: 24px;
     position: relative;

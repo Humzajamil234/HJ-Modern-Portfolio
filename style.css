@@ -409,7 +409,7 @@ header {
     position: absolute;
     width: 100%;
     height: 3px;
-    background-color: var(--white);
+    background-color: var(--black);
     transition: all 0.3s ease;
     transform-origin: center;
 }
@@ -445,6 +445,7 @@ header {
 @media (max-width: 768px) {
     .hamburger {
         display: block;
+        color: black;
     }
     
     .nav-links {
@@ -480,13 +481,13 @@ header {
     /* Backdrop when menu is open */
     .nav-links.active::before {
         content: '';
-        position: fixed;
+        position: relative;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
-        z-index: 80;
+        z-index: 150;
     }
 }
 

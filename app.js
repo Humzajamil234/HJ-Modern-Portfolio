@@ -9,37 +9,35 @@ window.addEventListener('load', function() {
     }, 1000);
 });
 
-const hamburger = document.getElementById("hamburger");
-const navLinks = document.getElementById("navLinks");
-const menuIcon = document.getElementById("menu-icon");
-const navItems = document.querySelectorAll(".nav-link");
+// Mobile Menu Toggle
+function toggleMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    
+    // Toggle active class on both elements
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+    
+    // Change aria-label for accessibility
+    const isOpen = navLinks.classList.contains('active');
+    hamburger.setAttribute('aria-expanded', isOpen);
+    hamburger.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    
+    // Toggle body scroll when menu is open
+    document.body.style.overflow = isOpen ? 'hidden' : 'auto';
+}
 
-// Toggle menu
-hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("show");
-
-  // Toggle icon
-  if (navLinks.classList.contains("show")) {
-    menuIcon.classList.remove("fa-bars");
-    menuIcon.classList.add("fa-times");
-  } else {
-    menuIcon.classList.remove("fa-times");
-    menuIcon.classList.add("fa-bars");
-  }
-});
-
-// Active link on click
-navItems.forEach((link) => {
-  link.addEventListener("click", () => {
-    navItems.forEach((item) => item.classList.remove("active"));
-    link.classList.add("active");
-
-    // Close menu on mobile
-    navLinks.classList.remove("show");
-    menuIcon.classList.remove("fa-times");
-    menuIcon.classList.add("fa-bars");
-  });
-
+// Close menu when clicking on a nav link
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 768) {
+                toggleMenu();
+            }
+        });
+    });
 
     // Show/hide back to top button
     const backToTop = document.querySelector('.back-to-top');
